@@ -31,8 +31,9 @@ class UserPageCompanyPreview extends StatelessWidget {
           const SizedBox(height: 3),
           Flexible(
               child: Text(
-            company.catchPhrase,
-            style: const TextStyle(overflow: TextOverflow.ellipsis),
+            '"${company.catchPhrase}"',
+            style: const TextStyle(
+                overflow: TextOverflow.ellipsis, fontStyle: FontStyle.italic),
           ))
         ],
       ),
